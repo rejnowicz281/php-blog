@@ -5,7 +5,7 @@ $result = mysqli_query($connection, $query);
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,8 @@ $result = mysqli_query($connection, $query);
 </head>
 
 <body>
-    <div class="container">
+    <a href="new" class="new-post-link">Nowy</a>
+    <div class="home-container">
         <?php while ($row = mysqli_fetch_array($result)): ?>
             <?php
             $id = $row["id"];
