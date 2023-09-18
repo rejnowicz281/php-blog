@@ -12,8 +12,6 @@ if (isset($_POST["tytul"]) && isset($_POST["tresc"])) {
     if ($result) {
         header("Location: ../");
         exit();
-    } else {
-        echo "Nie udało się nawiązać połączenia";
     }
 }
 ?>

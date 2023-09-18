@@ -24,6 +24,10 @@ $result = mysqli_query($connection, $query);
             $tresc = $row["tresc"];
             ?>
             <div class="post">
+                <form action="delete/delete.php" method="post" class="post-delete-form">
+                    <input type="hidden" name="id" value="<?php echo $id ?>">
+                    <button class="post-delete-button" type="submit">⨉</button>
+                </form>
                 <div class="post-id"> <?php echo $id ?> </div>
                 <div class="post-tytul"> <?php echo $tytul ?> </div>
                 <div class="post-tresc"> <?php echo $tresc ?> </div>

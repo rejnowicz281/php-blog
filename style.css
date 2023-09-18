@@ -14,6 +14,7 @@ body {
 
 /* POST */
 .post {
+    position: relative;
     padding-bottom: 50px;
     margin-bottom: 50px;
     border-bottom: 1px solid #393232;
@@ -21,6 +22,26 @@ body {
 
 .post:last-child {
     border-bottom: none;
+}
+
+.post-delete-form {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.post-delete-button {
+    opacity: 0;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 30px;
+    border: none;
+    background-color: inherit;
+}
+
+.post-delete-button:hover {
+    opacity: 1;
+    color: rgb(255, 255, 255);
 }
 
 .post-id {
