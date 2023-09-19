@@ -13,7 +13,8 @@
     <div class="post-form-container">
         <form class="post-form" action="create.php" method="POST">
             <input class="post-tytul-input" type="text" name="tytul" placeholder="Tytuł...">
-            <textarea class="post-tresc-input" name="tresc" placeholder="Treść..." cols="30" rows="10"></textarea>
+            <textarea class="post-tresc-input" name="tresc" placeholder="Treść..." cols="30" rows="10"
+                spellcheck="false"></textarea>
             <input class="post-submit" type="submit" value="Dodaj Post">
         </form>
     </div>

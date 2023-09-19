@@ -22,8 +22,8 @@
             <input type="hidden" name="id" value="<?php echo $id ?>">
             <input class="post-tytul-input" type="text" name="tytul" placeholder="Tytuł..."
                 value="<?php echo $tytul ?>">
-            <textarea class="post-tresc-input" name="tresc" placeholder="Treść..." cols="30"
-                rows="10"><?php echo $tresc ?></textarea>
+            <textarea class="post-tresc-input" name="tresc" placeholder="Treść..." cols="30" rows="10"
+                spellcheck="false"><?php echo $tresc ?></textarea>
             <input class="post-submit" type="submit" value="Edytuj Post">
         </form>
     </div>
