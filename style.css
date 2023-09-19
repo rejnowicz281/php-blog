@@ -142,6 +142,7 @@ body {
     color: white;
     border: none;
     resize: none;
+    margin-bottom: 25px;
 }
 
 .post-tresc-input:focus {
