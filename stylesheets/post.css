@@ -1,0 +1,69 @@
+.post-container {
+    max-width: 600px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.post-container > .post {
+    position: relative;
+}
+
+.post-container > .post > .post-delete-form {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.post-container > .post > .post-delete-form > .post-delete-button {
+    opacity: 0;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 30px;
+    border: none;
+    background-color: inherit;
+}
+
+.post-container > .post > .post-delete-form > .post-delete-button:hover {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+}
+
+.post-container > .post > .edit-post-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.post-container > .post > .edit-post-link:hover {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+}
+
+.post-container > .post > .post-tytul {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 50px 0 30px 0;
+}
+
+.post-container > .post > .post-tresc {
+    font-size: 18px;
+}
+
+.post-container > .post > .post-comments-container {
+    border-top: 1px solid #393232;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.post-container > .post > .post-comments-container > .post-comment {
+    padding: 15px 0;
+}
+
+.post-container > .post > .post-comments-container > .post-comment > .post-comment-autor {
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}

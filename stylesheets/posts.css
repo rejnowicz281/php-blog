@@ -1,0 +1,73 @@
+.posts-container {
+    max-width: 600px;
+    margin: auto;
+    padding-top: 25px;
+}
+
+.posts-container > .post-wrapper {
+    position: relative;
+    padding: 50px 0;
+    border-bottom: 1px solid #393232;
+    transition: 0.1s;
+}
+
+.posts-container > .post-wrapper:last-child {
+    border-bottom: none;
+}
+
+.posts-container > .post-wrapper:hover {
+    background-color: rgb(59, 59, 59);
+}
+
+.posts-container > .post-wrapper > .post {
+    color: inherit;
+    text-decoration: none;
+}
+
+.posts-container > .post-wrapper > .post-delete-form {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.posts-container > .post-wrapper > .post-delete-form > .post-delete-button {
+    opacity: 0;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 30px;
+    border: none;
+    background-color: inherit;
+}
+
+.posts-container > .post-wrapper > .post-delete-form > .post-delete-button:hover {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+}
+
+.posts-container > .post-wrapper > .edit-post-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.posts-container > .post-wrapper > .edit-post-link:hover {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+}
+
+.posts-container > .post-wrapper > .post > .post-id {
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.posts-container > .post-wrapper > .post > .post-tytul {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}

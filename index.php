@@ -10,24 +10,21 @@ $result = mysqli_query($connection, $query);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/global.css" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/posts.css" rel="stylesheet" type="text/css" />
     <title>Blog</title>
 </head>
 
 <body>
     <a href="new" class="new-post-link">Nowy</a>
-    <div class="home-container">
+    <div class="posts-container">
         <?php while ($row = mysqli_fetch_array($result)): ?>
             <?php
             $id = $row["id"];
             $tytul = $row["tytul"];
             $tresc = $row["tresc"];
             ?>
-            <div class="post">
-                <form action="delete/delete.php" method="post" class="post-delete-form">
-                    <input type="hidden" name="id" value="<?php echo $id ?>">
-                    <button class="post-delete-button" type="submit">⨉</button>
-                </form>
+            <div class="post-wrapper">
                 <a href="edit?id=<?php echo $id ?>&tytul=<?php echo $tytul ?>&tresc=<?php echo $tresc ?>"
                     class="edit-post-link">
                     <svg viewBox="0 0 24 24" width="30" height="30" xmlns=" http://www.w3.org/2000/svg">
@@ -40,9 +37,15 @@ $result = mysqli_query($connection, $query);
                         </g>
                     </svg>
                 </a>
-                <div class="post-id"> <?php echo $id ?> </div>
-                <div class="post-tytul"> <?php echo $tytul ?> </div>
-                <div class="post-tresc"> <?php echo $tresc ?> </div>
+                <form action="delete/delete.php" method="post" class="post-delete-form">
+                    <input type="hidden" name="id" value="<?php echo $id ?>">
+                    <button class="post-delete-button" type="submit">⨉</button>
+                </form>
+                <a href="post?id=<?php echo $id ?>" class="post">
+                    <div class="post-id"> <?php echo $id ?> </div>
+                    <div class="post-tytul"> <?php echo $tytul ?> </div>
+                    <div class="post-tresc"> <?php echo $tresc ?> </div>
+                </a>
             </div>
         <?php endwhile; ?>
     </div>

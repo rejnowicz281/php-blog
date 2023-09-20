@@ -1,0 +1,56 @@
+.post-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.post-form {
+    width: 600px;
+}
+
+.post-tytul-input {
+    background-color: inherit;
+    width: 100%;
+    font-size: 30px;
+    color: white;
+    border: none;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #2c2c2c;
+}
+
+.post-tytul-input:focus {
+    outline: none;
+}
+
+.post-tresc-input {
+    background-color: inherit;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border: none;
+    resize: none;
+    margin-bottom: 25px;
+}
+
+.post-tresc-input:focus {
+    outline: none;
+}
+
+.post-submit {
+    width: 100%;
+    border: none;
+    color: rgb(161, 161, 161);
+    font-weight: bold;
+    padding: 20px 10px;
+    border-radius: 5px;
+    background-color: #2c2c2c;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.post-submit:hover {
+    background-color: #393232;
+    color: rgb(255, 255, 255);
+}
